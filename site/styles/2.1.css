@@ -1,25 +1,53 @@
+header {
+    text-align: center;
+}
+
 body {
     font-family: Arial;
 }
 
+main {text-align: justify;}
+
+footer {text-align: right;}
+
 h1 {
     font-size: 32pt;
-    text-align: center;
 }
 
 p {
     font-size: 14 !important;
-    text-align: justify;
 }
 
-.picture {
-    text-align: center;
+div.advertising {
+    font-size: 12pt;
+    margin-top: 5pt;
+    margin-bottom: 5pt;
 }
-
-/* .picture img {width: 47%;} */
+/* .picture img {
+    width: 100%;
+} */
 
 /* p.greeting {
     font-size: 18pt;
 } */
+.bigger{
+    font-size: 16pt;
+}
 
-address {text-align: right;}
+table.calculate_weight, table.calculate_weight th, table.calculate_weight td {
+    border: grey thin solid;
+    padding: 4px;
+}
+
+table.nutricion {border-collapse: collapse;}
+
+table.nutricion td {
+    border-top: black thin dotted;
+    border-bottom: black thin dotted;
+    padding: 10px;
+}
+
+table.nutricion img {
+    width: 200px;
+    height: 150px;    
+}
