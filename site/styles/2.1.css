@@ -39,6 +39,11 @@ table.calculate_weight, table.calculate_weight th, table.calculate_weight td {
     padding: 4px;
 }
 
+table.calculate_weight thead th {
+    color: white;
+    background-color: grey;
+}
+
 table.nutricion {border-collapse: collapse;}
 
 table.nutricion td {
