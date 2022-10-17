@@ -1,5 +1,13 @@
 header {
     text-align: center;
+    background-image: url(../images/header.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-clip: padding-box;
+    margin-top: 0pt;
+    margin-bottom: 12pt;
+    margin-left: 0pt;
+    margin-right: 0pt;
 }
 
 body {
@@ -11,12 +19,13 @@ main {text-align: justify;}
 footer {text-align: right;}
 
 h1 {
-    font-size: 32pt;
+    font-size: 26pt;
+    text-shadow: 3px 3px 5px rgb(141, 153, 207);
 }
 
-p {
-    font-size: 14 !important;
-}
+/* p {
+    font-size: 12 !important;
+} */
 
 div.advertising {
     font-size: 12pt;
@@ -66,6 +75,15 @@ nav.vertical_nav {
     border-radius: 10px;
 }
 
+nav a:link, nav a:visited {
+    color: darkblue;
+}
+
+nav a:active, nav a:hover {
+    color: darksalmon;
+}
+*:target {border: 1px solid red;}
+
 nav div {
     margin-top: 5px;
     margin-bottom: 5px;
@@ -74,3 +92,68 @@ nav div {
 /* nav.line_nav {
     
 } */
+
+div.hamburger {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    width: 40px;
+    height: 40px;
+    background: url(../images/hamburger.jpg) center/contain no-repeat;
+    border: 1px solid grey;
+}
+
+div.hamburger > input {display: none;}
+
+div.hamburger > label {
+    display: block;
+    width: 38px;
+    height: 38px;
+    padding: 0px;
+    cursor: pointer;
+}
+
+div.hamburger > nav {
+    display: none;
+    /* background-color: mistyrose; */
+    background-color: rgba(169, 169, 169, 0.9);
+    border: 1 px solid grey;
+    position: relative;
+    left: -1px;
+    top: 2px; 
+}
+
+div.hamburger > nav > a {
+    display: block;
+    margin: 5px;
+}
+
+div.hamburger > input:checked ~ nav {
+    display: inline-block;
+}
+
+body.gallery {margin: 0px;}
+
+.gallery-item img { width: 100%;}
+
+body.noscroll {overflow: hidden;}
+
+p {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 12pt;
+    font-weight: normal;
+    text-indent: 5pt;
+}
+
+a {
+    text-decoration: none;
+}
+
+.button {
+    border: outset;
+}
+
+input {border-color: rgb(47, 23, 185);}
+input:focus {border: thin solid black;}
+input:invalid {border: thin solid rgb(192, 98, 98);}
+    

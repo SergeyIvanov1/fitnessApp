@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Account</title>
+    <link href="../styles/2.1.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
@@ -13,32 +14,36 @@
     <nav class="line_nav"><a href="../index.html">На главную страницу</a> |
         <a href="video.html">Тренировки</a> |
         <a href="nutricion.html">Питание</a> |
-        <a href="photo.html">Мотивация</a> |      
+        <a href="photo.html">Мотивация</a> |
         <a href="table.html">Статьи</a> |
         <a href="shop.html">Магазин</a> |
-        <a href="shopping_cart.html">Корзина</a></nav>
+        <a href="shopping_cart.html">Корзина</a>
+    </nav>
     <br>
     <form action="#" method="post" enctype="text/plain">
-        <p><label for="name">Введите Ваше имя</label><br>
-            <input type="text" name="name" id="name" required>
-        </p>
+        <fieldset>
+            <legend>Аккаунт</legend>
+            <p><label for="name">Введите Ваше имя</label><br>
+                <input type="text" name="name" id="name" required>
+            </p>
 
-        <p><label for="phone">Введите Ваш номер телефона</label><br>
-            <input type="text" name="phone" id="phone" required>
-        </p>
+            <p><label for="phone">Введите Ваш номер телефона</label><br>
+                <input type="text" name="phone" id="phone" required>
+            </p>
 
-        <p><label for="age">Укажите Ваш возраст</label><br>
-            <input type="number" name="age" id="age" min="18" required>
-        </p>
+            <p><label for="age">Укажите Ваш возраст</label><br>
+                <input type="number" name="age" id="age" min="18" required>
+            </p>
 
-        <p>
-        <label for="gender">Укажите Ваш пол:</label><br>
-        <input type="radio" name="gender" id="gender" value="male" required>Мужской<br>
-        <input type="radio" name="gender" value="female" checked>Женский<br>
-        </p>
-        <input type="checkbox" name="temp" value="*" required>Я подтверждаю, 
-        что ознакомлен(а) с правилами клуба.<br>
-        <p><input type="submit"></p>
+            <p>
+                <label for="gender">Укажите Ваш пол:</label><br>
+                <input type="radio" name="gender" id="gender" value="male" required>Мужской<br>
+                <input type="radio" name="gender" value="female" checked>Женский<br>
+            </p>
+            <input type="checkbox" name="temp" value="*" required>Я подтверждаю,
+            что ознакомлен(а) с правилами клуба.<br>
+            <p><input class="button" type="image" src="../images/button_send.jpg" width="70"></p>
+        </fieldset>
     </form>
 </body>
 
